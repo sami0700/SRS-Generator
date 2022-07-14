@@ -1,0 +1,1441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="124dp"
+                android:layout_marginLeft="124dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="125dp"
+                android:layout_marginRight="125dp"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="SRS Generator"
+                android:textColor="#000"
+                android:textSize="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:text="1. Cover Section"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/projectNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="1.1 Project Name"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+                android:ems="10"
+                android:fontFamily="@font/sf_pro_text_regular"
+
+                android:hint="Enter Project Name"
+                android:inputType="textPersonName"
+
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projectNameTextView" />
+
+            <TextView
+                android:id="@+id/preparedByTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="1.2 Prepared By"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+            <EditText
+                android:id="@+id/editTextTextPreparedBy"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+                android:ems="10"
+                android:hint="Enter Name"
+                android:inputType="textPersonName"
+
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/preparedByTextView" />
+
+            <TextView
+                android:id="@+id/orgNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="1.3 Organisation Name"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPreparedBy" />
+
+            <EditText
+                android:id="@+id/editTextTextOrgName"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+                android:ems="10"
+                android:hint="Enter Organisation Name"
+                android:inputType="textPersonName"
+
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/orgNameTextView" />
+
+            <TextView
+                android:id="@+id/goalAndProblem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="2. Project Goal and Problem"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextOrgName" />
+
+            <TextView
+                android:id="@+id/goalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="2.1 What is the goal of the project? "
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/goalAndProblem" />
+
+            <EditText
+                android:id="@+id/editTextTextGoal"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Answer"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/goalTextView" />
+
+            <TextView
+                android:id="@+id/problemTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="2.2 What problem does the project solve? "
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextGoal" />
+
+            <EditText
+                android:id="@+id/editTextTextProblem"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Answer"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/problemTextView" />
+
+            <TextView
+                android:id="@+id/visionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="2.3 What is the vision and scope?  "
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextProblem" />
+
+            <EditText
+                android:id="@+id/editTextTextVision"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Answer"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/visionTextView" />
+
+            <TextView
+                android:id="@+id/userPersonas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="3. User Personas"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextVision" />
+
+            <TextView
+                android:id="@+id/addPeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="3.1 Add People Details "
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userPersonas" />
+
+
+            <TextView
+                android:id="@+id/addPeopleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="3.1.1 Name "
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addPeople" />
+
+            <EditText
+                android:id="@+id/editTextTextAddPeopleName"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addPeopleName" />
+
+            <TextView
+                android:id="@+id/addPeopleAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="3.1.3 Age "
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextAddPeopleName" />
+
+            <EditText
+                android:id="@+id/editTextTextAddPeopleAge"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Age"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addPeopleAge" />
+
+            <TextView
+                android:id="@+id/addPeopleDesignation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="3.1.3 Designation "
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextAddPeopleAge" />
+
+            <EditText
+                android:id="@+id/editTextTextAddPeopleDesignation"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Designation"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addPeopleDesignation" />
+
+            <TextView
+                android:id="@+id/addPeopleSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="3.1.4 Skills "
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextAddPeopleDesignation" />
+
+            <EditText
+                android:id="@+id/editTextTextAddPeopleSkills"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Skills"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addPeopleSkills" />
+
+            <TextView
+                android:id="@+id/addPeopleJob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="3.1.5 Job to be Done "
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextAddPeopleSkills" />
+
+            <EditText
+                android:id="@+id/editTextTextAddPeopleJob"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Job to be done"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addPeopleJob" />
+
+            <TextView
+                android:id="@+id/projectDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="4. Project Description"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextAddPeopleJob" />
+
+            <TextView
+                android:id="@+id/projDescOrigin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="4.1 What is the origin of the product being specified in this SRS? "
+                android:textColor="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projectDesc" />
+
+            <EditText
+                android:id="@+id/editTextTextprojDescOrigin"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Answer"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projDescOrigin" />
+
+            <TextView
+                android:id="@+id/projDescProdType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="4.2 Product Type "
+                android:textColor="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextprojDescOrigin" />
+
+            <EditText
+                android:id="@+id/editTextTextProdType"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Product Type"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projDescProdType" />
+
+            <TextView
+                android:id="@+id/projDescProdFunc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="4.3 Product Functions "
+                android:textColor="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextProdType" />
+
+            <TextView
+                android:id="@+id/projDescProdFuncName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="4.3.1 Product Function"
+                android:textColor="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projDescProdFunc" />
+
+            <EditText
+                android:id="@+id/editTextTextProdFuncName"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Product Function"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projDescProdFuncName" />
+
+            <TextView
+                android:id="@+id/projDescProdFuncDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="4.3.2 Brief Use of Description "
+                android:textColor="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextProdFuncName" />
+
+            <EditText
+                android:id="@+id/editTextTextProdFuncDesc"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Answer"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projDescProdFuncDesc" />
+
+            <TextView
+                android:id="@+id/projDescProdFuncActions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="4.3.3 Actions "
+                android:textColor="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextProdFuncDesc" />
+
+            <EditText
+                android:id="@+id/editTextTextProdFuncActions"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Answer"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projDescProdFuncActions" />
+
+            <TextView
+                android:id="@+id/projDescOperating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="4.4 Operating Environment "
+                android:textColor="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextProdFuncActions" />
+
+            <TextView
+                android:id="@+id/projDescEnvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="4.4.1 Environment Name "
+                android:textColor="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projDescOperating" />
+
+            <EditText
+                android:id="@+id/editTextTextEnvName"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Environment Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projDescEnvName" />
+
+            <TextView
+                android:id="@+id/projDescEnvReason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="4.4.2 Environment Reason"
+                android:textColor="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextEnvName" />
+
+            <EditText
+                android:id="@+id/editTextTextEnvReason"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Answer"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projDescEnvReason" />
+
+            <TextView
+                android:id="@+id/projDescDevDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="4.5 Development Details "
+                android:textColor="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextEnvReason" />
+
+            <TextView
+                android:id="@+id/projDescDevDetailsTech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="4.5.1 Technology (Frontend and Backend)"
+                android:textColor="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projDescDevDetails" />
+
+            <EditText
+                android:id="@+id/editTextTextDetailsTech"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Technology Details"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projDescDevDetailsTech" />
+
+            <TextView
+                android:id="@+id/projDescDevMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="4.5.2 Development Methodology "
+                android:textColor="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextDetailsTech" />
+
+            <EditText
+                android:id="@+id/editTextTextDevMethod"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Answer"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projDescDevMethod" />
+
+            <TextView
+                android:id="@+id/projDescDevReq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="4.5.3 Development Requirement And Security "
+                android:textColor="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextDevMethod" />
+
+            <EditText
+                android:id="@+id/editTextTextDevReq"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Answer"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/projDescDevReq" />
+
+            <TextView
+                android:id="@+id/sysFeatures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="5. System Features"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextDevReq" />
+
+            <TextView
+                android:id="@+id/sysFeaturesName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="5.1 Function Name"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sysFeatures" />
+
+            <EditText
+                android:id="@+id/editTextTextSysName"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Function Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sysFeaturesName" />
+
+            <TextView
+                android:id="@+id/sysFeaturesDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="5.2 Function Description "
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextSysName" />
+
+            <EditText
+                android:id="@+id/editTextTextFeaturesDesc"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Function Description"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sysFeaturesDesc" />
+
+            <TextView
+                android:id="@+id/sysFeaturesReq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="5.3 System Features"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextFeaturesDesc" />
+
+            <EditText
+                android:id="@+id/editTextTextFeaturesReq"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter System Features"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sysFeaturesReq" />
+
+            <TextView
+                android:id="@+id/nonFunct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="6. Non-Functional"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextFeaturesReq" />
+
+            <TextView
+                android:id="@+id/nonFunctPerReq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="6.1 Performance Requirements"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nonFunct" />
+
+            <EditText
+                android:id="@+id/editTextTextPerReq"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Performance Requirements"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nonFunctPerReq" />
+
+            <TextView
+                android:id="@+id/nonFunctSecReq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="6.2 Security Requirements "
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPerReq" />
+
+            <EditText
+                android:id="@+id/editTextTextSecReq"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Security Requirements"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nonFunctSecReq" />
+
+            <TextView
+                android:id="@+id/softQuality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="6.3 Software Quality Requirements"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextSecReq" />
+
+            <EditText
+                android:id="@+id/editTextTextSoftQuality"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Software Quality Requirements"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/softQuality" />
+
+            <TextView
+                android:id="@+id/othReq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="6.4 Other Requirements"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextSoftQuality" />
+
+            <EditText
+                android:id="@+id/editTextTextOthReq"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Other Requirements"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/othReq" />
+
+            <TextView
+                android:id="@+id/srsDiag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="7. SRS Diagrams"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextOthReq" />
+
+            <Button
+                android:id="@+id/SRSbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Upload Image"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/srsDiag" />
+
+            <TextView
+                android:id="@+id/timeline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="8. Timeline, Budget and Risks"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SRSbutton" />
+
+            <TextView
+                android:id="@+id/timeline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="8.1 Timeline"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timeline" />
+
+            <EditText
+                android:id="@+id/editTextTextTimeline"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Timeline"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timeline1" />
+
+            <TextView
+                android:id="@+id/budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="8.2 Budget"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextTimeline" />
+
+            <EditText
+                android:id="@+id/editTextTextBudget"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Budget"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budget" />
+
+            <TextView
+                android:id="@+id/risks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="8.3 Risks"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextBudget" />
+
+            <EditText
+                android:id="@+id/editTextTextRisks"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Risks"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/risks" />
+
+            <TextView
+                android:id="@+id/futurePlans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="9. Future Plans"
+                android:textColor="#000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextRisks" />
+
+            <EditText
+                android:id="@+id/editTextTextFuturePlans"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext_backgrounf"
+
+                android:ems="10"
+                android:hint="Enter Future Plans"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#1b1b1b"
+
+
+                android:textColorHint="#1C1C1E"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/futurePlans" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="0dp"
+
+                android:layout_height="53dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="130dp"
+                android:layout_marginRight="130dp"
+
+                android:layout_marginBottom="30dp"
+                android:text="Submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextTextFuturePlans" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

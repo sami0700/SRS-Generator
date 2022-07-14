@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Srs Generator</string>
+    <string name="goToSignUp">New to SRS Generator? <u>Sign Up</u></string>
+    <string name="goToLogin"> <u>Back to login?</u></string>
+</resources>

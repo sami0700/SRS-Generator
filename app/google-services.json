@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "519347377036",
+    "project_id": "srs-generator",
+    "storage_bucket": "srs-generator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519347377036:android:13f30680a9f2385621bca9",
+        "android_client_info": {
+          "package_name": "com.panshul.srsgenerator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519347377036-ulfjvajq4t0hb6vdcqh38o93us3qo91j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSqEdBn8Axi_54fZ8tzSZzDin0T7bM3g8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519347377036-ulfjvajq4t0hb6vdcqh38o93us3qo91j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
